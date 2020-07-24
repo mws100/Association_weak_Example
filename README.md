@@ -1,7 +1,7 @@
 ## iOS中objc_setAssociatedObject关联对象自动置空
 
 ### 前言
-有点经验的iOS开发者都知道，ARC中的weak关键字可以在对象销毁时 指针自动置成nil，在OC中向nil发消息是安全的，所以不会造成野指针错误。
+有经验的iOS开发者都知道，ARC中的weak关键字可以在对象销毁时 指针自动置成nil，在OC中向nil发消息是安全的，所以不会造成野指针错误。
 
 在category中扩展属性时，一般会使用runtime的关联对象（AssociatedObject）技术，关联对象的策略（Policy）有5个：
 
